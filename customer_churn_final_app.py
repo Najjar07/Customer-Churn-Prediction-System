@@ -4,8 +4,8 @@ import joblib
 
 
 # Load Model & Scaler
-model_path = r"C:\Users\LENOVO\Desktop\sk\churn_model.pkl"
-scaler_path = r"c:\Users\LENOVO\Desktop\sk\churn_scaler.pkl"
+model_path = "churn_model.pkl"
+scaler_path = "churn_scaler.pkl"
 model = joblib.load(model_path)
 scaler = joblib.load(scaler_path)
 
@@ -87,4 +87,5 @@ if st.button("🔍 Assess Churn Risk"):
     updated.to_csv(file_name, index=False)
 
     st.success("✅ Prediction saved successfully!")
+
 
